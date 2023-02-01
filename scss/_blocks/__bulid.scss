@@ -1,0 +1,489 @@
+$border: 1px solid;
+
+@mixin btn {
+  width: 180px;
+  height: 45px;
+  color: white;
+  background-color: #02897A;
+//   font-size: 15px;
+  border-radius: 4px;
+  border: 1px solid;
+}
+
+section {
+  width: 1200px;
+  height: 550px;
+  margin: 0 auto;
+  border: $border;
+}
+
+.build__container {
+  width: 100%;
+  height: 100%;
+  border: $border;
+}
+.build__text {
+  width: 100%;
+  height: 20%;
+  border: $border;
+
+  h1 {
+    margin: 0 auto;
+    width: 45%;
+    height: 100%;
+    border: $border;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: #22343d;
+  }
+}
+.build__img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  border: $border;
+  .build__img-cards {
+    display: flex;
+    gap: 50px;
+    width: 1095px;
+    height: 300px;
+    border: $border;
+  }
+  .build__img-card {
+    width: 25%;
+    height: 100%;
+    border: $border;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    img {
+      width: 51px;
+      height: 50px;
+      margin-bottom: 10px;
+      border: $border;
+    }
+    h3 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 33px;
+      margin-bottom: 10px;
+      color: #22343d;
+    }
+    article {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #22343d;
+    }
+  }
+  .btn {
+    @include btn();
+  }
+}
+
+
+
+
+@media only screen and (max-width:1000px){
+    section {
+        width: 100%;
+        height: 480px;
+        margin: 0 auto;
+        border: $border;
+      }
+      .build__container {
+        width: 100%;
+        height: 100%;
+        border: $border;
+      }
+      .build__text {
+        width: 100%;
+        height: 19%;
+        border: $border;
+      
+        h1 {
+          font-size: 28px;
+          text-align: center;
+          color: #22343d;
+        }
+      }
+      .build__img {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        height: 81%;
+        // border: 1px solid red;
+        border: $border;
+        .build__img-cards {
+          display: flex;
+          gap: 50px;
+          width: 1095px;
+          height: 250px;
+          border: $border;
+        }
+        .build__img-card {
+          width: 25%;
+          height: 100%;
+          border: $border;
+          img {
+            width: 51px;
+            height: 50px;
+            margin-bottom: 10px;
+            border: $border;
+          }
+          h3 {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            margin-bottom: 10px;
+            color: #22343d;
+          }
+          article {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #22343d;
+          }
+        }
+        .btn {
+          @include btn();
+        }
+      }
+}
+@media only screen and (max-width:950px){
+    section {
+        width: 100%;
+        height: 480px;
+        margin: 0 auto;
+        border: $border;
+      }
+      .build__container {
+        width: 100%;
+        height: 100%;
+        border: $border;
+      }
+      .build__text {
+        width: 100%;
+        height: 19%;
+        border: $border;
+      
+        h1 {
+          font-size: 24px;
+          text-align: center;
+          color: #22343d;
+        }
+      }
+      .build__img {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        height: 81%;
+        // border: 1px solid red;
+        border: $border;
+        .build__img-cards {
+          display: flex;
+          gap: 40px;
+          width: 1095px;
+          height: 220px;
+          border: $border;
+        }
+        .build__img-card {
+          width: 25%;
+          height: 100%;
+          border: $border;
+          img {
+            width: 51px;
+            height: 50px;
+            margin-bottom: 10px;
+            border: $border;
+          }
+          h3 {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 33px;
+            margin-bottom: 10px;
+            color: #22343d;
+          }
+          article {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 26px;
+            color: #22343d;
+          }
+        }
+        .btn {
+          @include btn();
+          width: 150px;
+          height: 40px;
+        }
+      }
+}
+
+@media only screen and (max-width:832px){
+    section {
+        width: 100%;
+        border: $border;
+      }
+      .build__container {
+        width: 100%;
+        height: 100%;
+        border: $border;
+      }
+      .build__text {
+        width: 100%;
+        height: 19%;
+        border: $border;
+      
+        h1 {
+          font-size: 23px;
+          text-align: center;
+          color: #22343d;
+        }
+      }
+      .build__img {
+        width: 100%;
+        height: 81%;
+        // border: 1px solid red;
+        border: $border;
+        .build__img-cards {
+          width: 1095px;
+          height: 220px;
+          border: $border;
+        }
+        .build__img-card {
+          width: 25%;
+          height: 100%;
+          border: $border;
+          img {
+            width: 51px;
+            height: 50px;
+            margin-bottom: 10px;
+            border: $border;
+          }
+          h3 {
+            font-size: 18px;
+            line-height: 33px;
+            margin-bottom: 10px;
+            color: #22343d;
+          }
+          article {
+            font-size: 14px;
+            line-height: 26px;
+            color: #22343d;
+          }
+        }
+        .btn {
+          @include btn();
+          width: 150px;
+          height: 40px;
+        }
+      }
+}
+
+@media only screen and (max-width:681px){
+    section {
+        width: 100%;
+        border: $border;
+      }
+      .build__container {
+        width: 100%;
+        height: 100%;
+        border: $border;
+      }
+      .build__text {
+        // width: 100%;
+        // height: 19%;
+        // border: $border;
+      
+        h1 {
+          font-size: 20px;
+          text-align: center;
+          color: #22343d;
+        }
+      }
+      .build__img {
+        // width: 100%;
+        // height: 81%;
+        // border: 1px solid red;
+        // border: $border;
+        .build__img-card {
+          width: 1095px;
+          height: 220px;
+          border: $border;
+        }
+        .build__img-card {
+          width: 25%;
+          height: 100%;
+          border: $border;
+          img {
+            width: 40px;
+            height: 40px;
+          }
+          h3 {
+            font-size: 14px;
+            line-height: 33px;
+            // margin-bottom: 10px;
+            color: #22343d;
+          }
+          article {
+            font-size: 10px;
+            line-height: 26px;
+            color: #22343d;
+          }
+        }
+        .btn {
+          @include btn();
+          width: 110px;
+          height: 30px;
+        }
+      }
+}
+
+@media only screen and (max-width:505px){
+    section {
+        width: 100%;
+        border: $border;
+      }
+      .build__container {
+        width: 100%;
+        height: 100%;
+        border: $border;
+      }
+      .build__text {
+        width: 100%;
+        height: 19%;
+        border: $border;
+      
+        h1 {
+            width: 250px;
+            height: 100%;
+          font-size: 15px;
+          text-align: center;
+          color: #22343d;
+        }
+      }
+      .build__img {
+        width: 100%;
+        height: 81%;
+        border: $border;
+        .build__img-cards {
+          width: 1095px;
+          height: 210px;
+          border: $border;
+        }
+        .build__img-card{
+          width: 20%;
+          height: 100%;
+          border: $border;
+          img {
+            width: 40px;
+            height: 40px;
+          }
+          h3 {
+            font-size: 10px;
+            line-height: 33px;
+            // margin-bottom: 10px;
+            color: #22343d;
+          }
+          article {
+            font-size: 8px;
+            line-height: 26px;
+            color: #22343d;
+          }
+        }
+        .btn {
+          @include btn();
+          width: 110px;
+          height: 30px;
+        }
+      }
+}
+
+
+@media only screen and (max-width:505px){
+    section {
+        width: 100%;
+        height: 100%;
+        border: $border;
+      }
+      .build__container {
+        width: 100%;
+        height: 100%;
+        border: $border;
+      }
+      .build__text {
+        width: 100%;
+        height: 19%;
+        border: $border;
+      
+        h1 {
+            width: 250px;
+            height: 100%;
+          font-size: 20px;
+          text-align: center;
+          color: #22343d;
+        }
+      }
+      .build__img {
+        width: 100%;
+        height: 81%;
+        border: $border;
+
+        .build__img-cards {
+        display: flex;
+        flex-direction: column;
+          width: 100%;
+          height: 100%;
+          padding: 25px;
+          border: $border;
+        }
+        .build__img-card{
+          width: 50%;
+          margin: 0 auto;
+          text-align: center;
+          height: 80%;
+          border: $border;
+          img {
+            width: 50px;
+            height: 50px;
+          }
+          h3 {
+            font-size: 16px;
+            line-height: 33px;
+            // margin-bottom: 10px;
+            color: #22343d;
+          }
+          article {
+            font-size: 13px;
+            line-height: 26px;
+            color: #22343d;
+          }
+        }
+        .btn {
+          @include btn();
+          width: 180px;
+          height: 35px;
+        }
+      }
+}
